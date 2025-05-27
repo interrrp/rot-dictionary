@@ -38,7 +38,12 @@
     gap: 0.75rem;
   }
 
+  main > ul > li > a {
+    height: 100%;
+  }
+
   main > ul > li > a > article {
+    height: 100%;
     background-color: var(--color-bg-secondary);
     padding: 1rem;
     border-radius: 8px;
@@ -47,13 +52,19 @@
 
   main > ul > li > a > article > header {
     display: flex;
-    align-items: center;
-    margin-bottom: 0.75rem;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
     gap: 1rem;
   }
 
   main > ul > li > a > article > header > h3 {
     font-size: 20px;
+    line-height: 1.2;
+    max-width: 70%;
+  }
+
+  main > ul > li > a > article > main > p {
+    line-height: 1.5;
   }
 
   main > ul > li > a > article > main {

@@ -41,7 +41,7 @@ def index():
     return template("index", terms=get_terms())
 
 
-@get("/<slug:re:[a-z]+>")
+@get("/<slug:re:[a-z\\-]+>")
 def term(slug):
     return template("term", term=get_terms()[slug])
 

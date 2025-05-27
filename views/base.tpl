@@ -13,6 +13,7 @@
         --color-fg: hsl(0 0% 90%);
         --color-fg-secondary: hsl(0 0% 70%);
         --color-fg-tertiary: hsl(0 0% 50%);
+        --color-fg-link: hsl(240 80% 80%);
       }
 
       * {

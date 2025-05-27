@@ -31,4 +31,8 @@
   main {
     line-height: 1.7;
   }
+
+  main a {
+    color: var(--color-fg-link);
+  }
 </style>
