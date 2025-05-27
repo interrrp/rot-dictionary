@@ -29,6 +29,11 @@
       a {
         color: inherit;
         text-decoration: none;
+        transition-duration: 100ms;
+      }
+
+      a:hover {
+        filter: brightness(120%);
       }
 
       body {

@@ -43,10 +43,6 @@
     padding: 1rem;
     border-radius: 8px;
     border: 1px solid var(--color-bg-secondary-border);
-
-    &:hover {
-      filter: brightness(110%);
-    }
   }
 
   main > ul > li > a > article > header {
