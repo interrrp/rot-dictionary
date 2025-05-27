@@ -5,12 +5,14 @@
 # pyright: basic
 
 from functools import cache
+import os
 from pathlib import Path
 
 import mistune
 from bottle import get, run, template
 
-DEBUG = True
+debug = bool(os.getenv("RD_DEBUG"))
+print(f"Debug: {debug}")
 
 
 def get_terms():
@@ -30,7 +32,7 @@ def get_terms():
 
 
 # Terms should be reloaded every request for debugging
-if not DEBUG:
+if not debug:
     get_terms = cache(get_terms)
 
 
@@ -45,7 +47,7 @@ def term(slug):
 
 
 if __name__ == "__main__":
-    if DEBUG:
+    if debug:
         run(debug=True, reloader=True)
     else:
         run()
