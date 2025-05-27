@@ -27,4 +27,8 @@
   header>p {
     color: var(--color-fg-secondary);
   }
+
+  main {
+    line-height: 1.7;
+  }
 </style>
