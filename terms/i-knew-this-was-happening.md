@@ -9,3 +9,5 @@ meaning: (video)
 ## Notable lines
 
 > Yeah, I knew this was happening.
+
+> What you're doing is really smart, but also very dangerous.
