@@ -58,7 +58,7 @@
   }
 
   main > ul > li > a > article > header > h3 {
-    font-size: 20px;
+    font-weight: 500;
     line-height: 1.2;
     max-width: 70%;
   }
