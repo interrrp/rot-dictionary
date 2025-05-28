@@ -12,7 +12,6 @@
         --color-bg-secondary-border: hsl(0 0% 15%);
         --color-fg: hsl(0 0% 90%);
         --color-fg-secondary: hsl(0 0% 70%);
-        --color-fg-tertiary: hsl(0 0% 50%);
         --color-fg-link: hsl(240 80% 80%);
       }
 
@@ -76,10 +75,6 @@
       nav > ul > li > a {
         color: var(--color-fg-secondary);
       }
-
-      footer {
-        color: var(--color-fg-tertiary);
-      }
     </style>
   </head>
 
@@ -103,11 +98,6 @@
       <hr />
 
       {{ !base }}
-
-      <hr />
-      <footer>
-        <p>Rot Dictionary is an open-source project under the MIT license.</p>
-      </footer>
     </div>
   </body>
 </html>
