@@ -51,7 +51,7 @@
         height: 100vh;
         max-width: 60rem;
         margin: 0 auto;
-        padding: 2rem 0;
+        padding: 2rem;
 
         display: flex;
         flex-direction: column;
