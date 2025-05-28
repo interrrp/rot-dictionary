@@ -35,4 +35,16 @@
   main a {
     color: var(--color-fg-link);
   }
+
+  main h2 {
+    font-size: 20px;
+    margin: 1rem 0;
+  }
+
+  main blockquote {
+    border-left: 2px solid var(--color-bg-secondary-border);
+    padding-left: 1rem;
+    font-style: italic;
+    color: var(--color-fg-secondary);
+  }
 </style>
