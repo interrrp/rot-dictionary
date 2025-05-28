@@ -1,6 +1,7 @@
 % rebase("base.tpl", title="")
 
 <main>
+  <input type="text" placeholder="Search for a term" />
   <ul>
     % for slug, term in terms.items():
     <li>
@@ -19,6 +20,23 @@
     % end
   </ul>
 </main>
+
+<script>
+  const searchBox = document.querySelector("main > input");
+
+  searchBox.addEventListener("keyup", (event) => {
+    const filter = searchBox.value;
+
+    for (const term of document.querySelectorAll("main > ul > li")) {
+      const shouldShow = term
+        .querySelector("a > article > header > h3")
+        .textContent.toLowerCase()
+        .includes(filter.toLowerCase());
+
+      term.style.display = shouldShow ? "block" : "none";
+    }
+  });
+</script>
 
 <style>
   main > input {
