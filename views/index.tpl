@@ -25,14 +25,14 @@
   const searchBox = document.querySelector("main > input");
 
   searchBox.addEventListener("keyup", (event) => {
-    const filter = searchBox.value;
+    const needle = searchBox.value;
 
     for (const term of document.querySelectorAll("main > ul > li")) {
-      const shouldShow = term
-        .querySelector("a > article > header > h3")
-        .textContent.toLowerCase()
-        .includes(filter.toLowerCase());
+      let haystack = "";
+      haystack += term.querySelector("a > article > header > h3").textContent;
+      haystack += term.querySelector("a > article > main > p").textContent;
 
+      const shouldShow = haystack.toLowerCase().includes(needle);
       term.style.display = shouldShow ? "block" : "none";
     }
   });
